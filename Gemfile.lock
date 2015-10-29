@@ -1,18 +1,7 @@
 GIT
-  remote: https://github.com/pophealth/quality-measure-engine.git
-  revision: a0131e1981831565381224f41b77658acaf28c85
-  branch: master
-  specs:
-    quality-measure-engine (3.1.1)
-      delayed_job_mongoid (~> 2.1.0)
-      mongoid (~> 4.0.0)
-      moped (~> 2.0.0)
-      rubyzip (~> 0.9.9)
-
-GIT
-  remote: https://github.com/projectcypress/health-data-standards.git
-  revision: e25632049229bbdf35625285fad63e71a594771f
-  branch: master
+  remote: https://github.com/phema/health-data-standards.git
+  revision: b18d6e1c06a815d55c7004f918e475cc0dfc931d
+  branch: phema
   specs:
     health-data-standards (3.6.1)
       activesupport (~> 4.1.1)
@@ -30,18 +19,29 @@ GIT
       uuid (~> 2.3.7)
 
 GIT
+  remote: https://github.com/phema/hqmf2js.git
+  revision: 99ae03acf48a2f3677964853cccb5f35cafd4b94
+  branch: phema
+  specs:
+    hqmf2js (1.3.0)
+
+GIT
+  remote: https://github.com/pophealth/quality-measure-engine.git
+  revision: a0131e1981831565381224f41b77658acaf28c85
+  branch: master
+  specs:
+    quality-measure-engine (3.1.1)
+      delayed_job_mongoid (~> 2.1.0)
+      mongoid (~> 4.0.0)
+      moped (~> 2.0.0)
+      rubyzip (~> 0.9.9)
+
+GIT
   remote: https://github.com/projecttacoma/bonnie_bundler.git
   revision: d29af95467665ad3440bdd530e5793cf1506b4a8
   branch: master
   specs:
     bonnie_bundler (1.0.0)
-
-GIT
-  remote: https://github.com/projecttacoma/hqmf2js.git
-  revision: a6a436b6d998105b6beed7bc07edc8122f731b39
-  branch: master
-  specs:
-    hqmf2js (1.3.0)
 
 GIT
   remote: https://github.com/projecttacoma/patientapi.git
@@ -52,7 +52,7 @@ GIT
 
 GIT
   remote: https://github.com/projecttacoma/simplexml_parser.git
-  revision: 876dd5f9f2343bcc5b4f05da01bc737d43822df7
+  revision: aa13b0ee4b7e3b8adaf2749c01fbe1ec301b6f02
   branch: master
   specs:
     simplexml_parser (1.0.0)
@@ -60,27 +60,27 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.1.12)
-      actionpack (= 4.1.12)
-      actionview (= 4.1.12)
+    actionmailer (4.1.13)
+      actionpack (= 4.1.13)
+      actionview (= 4.1.13)
       mail (~> 2.5, >= 2.5.4)
-    actionpack (4.1.12)
-      actionview (= 4.1.12)
-      activesupport (= 4.1.12)
+    actionpack (4.1.13)
+      actionview (= 4.1.13)
+      activesupport (= 4.1.13)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    actionview (4.1.12)
-      activesupport (= 4.1.12)
+    actionview (4.1.13)
+      activesupport (= 4.1.13)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    activemodel (4.1.12)
-      activesupport (= 4.1.12)
+    activemodel (4.1.13)
+      activesupport (= 4.1.13)
       builder (~> 3.1)
-    activerecord (4.1.12)
-      activemodel (= 4.1.12)
-      activesupport (= 4.1.12)
+    activerecord (4.1.13)
+      activemodel (= 4.1.13)
+      activesupport (= 4.1.13)
       arel (~> 5.0.0)
-    activesupport (4.1.12)
+    activesupport (4.1.13)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -88,7 +88,7 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.10)
-    bson (3.2.1)
+    bson (3.2.6)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -99,7 +99,7 @@ GEM
     capistrano-bundler (1.1.4)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-rails (1.1.3)
+    capistrano-rails (1.1.5)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
     coderay (1.1.0)
@@ -115,12 +115,12 @@ GEM
     commonjs (0.2.7)
     connection_pool (2.2.0)
     daemons (1.2.3)
-    delayed_job (4.0.6)
+    delayed_job (4.1.1)
       activesupport (>= 3.0, < 5.0)
     delayed_job_mongoid (2.1.0)
       delayed_job (>= 3.0, < 5)
       mongoid (>= 3.0, < 5)
-    devise (3.5.1)
+    devise (3.5.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -132,11 +132,11 @@ GEM
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
-    eventmachine (1.0.7)
+    eventmachine (1.0.8)
     exception_notification (4.1.1)
       actionmailer (>= 3.0.4)
       activesupport (>= 3.0.4)
-    execjs (2.5.2)
+    execjs (2.6.0)
     foreman (0.78.0)
       thor (~> 0.19.1)
     handlebars_assets (0.16)
@@ -149,14 +149,14 @@ GEM
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
-    jasmine (2.3.0)
+    jasmine (2.3.1)
       jasmine-core (~> 2.3)
       phantomjs
       rack (>= 1.2.1)
       rake
     jasmine-core (2.3.4)
     jasmine-jquery-rails (2.0.3)
-    jquery-rails (3.1.3)
+    jquery-rails (3.1.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
@@ -167,7 +167,7 @@ GEM
       less (~> 2.6.0)
       sprockets (> 2, < 4)
       tilt
-    libv8 (3.16.14.11)
+    libv8 (3.16.14.13)
     log4r (1.1.10)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
@@ -175,9 +175,9 @@ GEM
       mime-types (>= 1.16, < 3)
     memoist (0.9.3)
     method_source (0.8.2)
-    mime-types (2.6.1)
+    mime-types (2.6.2)
     mini_portile (0.6.2)
-    minitest (5.8.0)
+    minitest (5.8.2)
     mongoid (4.0.0)
       activemodel (~> 4.0)
       moped (~> 2.0.0)
@@ -185,26 +185,26 @@ GEM
       tzinfo (>= 0.3.37)
     mongoid-tree (1.0.4)
       mongoid (>= 3.0, <= 4.0)
-    moped (2.0.6)
+    moped (2.0.7)
       bson (~> 3.0)
       connection_pool (~> 2.0)
       optionable (~> 0.2.0)
     multi_json (1.11.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (2.9.2)
+    net-ssh (3.0.1)
     netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    non-stupid-digest-assets (1.0.4)
-    oj (2.12.11)
+    non-stupid-digest-assets (1.0.5)
+    oj (2.13.0)
     optionable (0.2.0)
     origin (2.1.1)
     orm_adapter (0.5.0)
     phantomjs (1.9.8.0)
     protected_attributes (1.0.9)
       activemodel (>= 4.0.1, < 5.0)
-    pry (0.10.1)
+    pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -214,19 +214,19 @@ GEM
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails (4.1.12)
-      actionmailer (= 4.1.12)
-      actionpack (= 4.1.12)
-      actionview (= 4.1.12)
-      activemodel (= 4.1.12)
-      activerecord (= 4.1.12)
-      activesupport (= 4.1.12)
+    rails (4.1.13)
+      actionmailer (= 4.1.13)
+      actionpack (= 4.1.13)
+      actionview (= 4.1.13)
+      activemodel (= 4.1.13)
+      activerecord (= 4.1.13)
+      activesupport (= 4.1.13)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.1.12)
+      railties (= 4.1.13)
       sprockets-rails (~> 2.0)
-    railties (4.1.12)
-      actionpack (= 4.1.12)
-      activesupport (= 4.1.12)
+    railties (4.1.13)
+      actionpack (= 4.1.13)
+      activesupport (= 4.1.13)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
@@ -243,7 +243,7 @@ GEM
       spreadsheet (> 0.6.4)
     ruby-ole (1.2.11.8)
     rubyzip (0.9.9)
-    rvm1-capistrano3 (1.3.2.2)
+    rvm1-capistrano3 (1.4.0)
       capistrano (~> 3.0)
       sshkit (>= 1.2)
     simplecov (0.10.0)
@@ -252,14 +252,14 @@ GEM
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
     slop (3.6.0)
-    spreadsheet (1.0.4)
+    spreadsheet (1.0.8)
       ruby-ole (>= 1.0)
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.3.2)
+    sprockets-rails (2.3.3)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
@@ -271,16 +271,16 @@ GEM
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
-    thin (1.6.3)
+    thin (1.6.4)
       daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0)
+      eventmachine (~> 1.0, >= 1.0.4)
       rack (~> 1.0)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.7.1)
+    uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unf (0.1.4)
@@ -331,6 +331,3 @@ DEPENDENCIES
   therubyracer
   thin
   uglifier (>= 1.0.3)
-
-BUNDLED WITH
-   1.10.6
